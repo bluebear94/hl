@@ -33,7 +33,7 @@ def oht(s):
 		o = ""
 	for l in s:
 		for c in l:
-			if c == '\n': continue
+			if c == '\n' or c == '\r': continue
 			nr = cl(c)
 			if r != nr: f()
 			r = nr
